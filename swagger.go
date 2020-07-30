@@ -209,6 +209,8 @@ window.onload = function() {
     url: "{{.URL}}",
     dom_id: '#swagger-ui',
     validatorUrl: null,
+    defaultModelsExpandDepth: -1,
+    defaultModelExpandDepth: 0,
     presets: [
       SwaggerUIBundle.presets.apis,
       SwaggerUIStandalonePreset
