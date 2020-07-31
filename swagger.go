@@ -210,7 +210,7 @@ window.onload = function() {
     dom_id: '#swagger-ui',
     validatorUrl: null,
 	defaultModelsExpandDepth: -1,
-	defaultModelExpandDepth: 0,
+	defaultModelExpandDepth: -1,
     presets: [
       SwaggerUIBundle.presets.apis,
       SwaggerUIStandalonePreset
@@ -219,7 +219,7 @@ window.onload = function() {
       SwaggerUIBundle.plugins.DownloadUrl
     ],
 	layout: "StandaloneLayout",
-	deepLinking: {{.DeepLinking}}
+	deepLinking: false
   })
 
   window.ui = ui
