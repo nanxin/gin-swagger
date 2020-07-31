@@ -136,7 +136,7 @@ const swagger_index_templ = `<!-- HTML for static distribution bundle build -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Swagger UI Test</title>
+  <title>Swagger UI</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
   <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
@@ -209,8 +209,9 @@ window.onload = function() {
     url: "{{.URL}}",
     dom_id: '#swagger-ui',
     validatorUrl: null,
-    defaultModelsExpandDepth: -1,
-    defaultModelExpandDepth: 0,
+	defaultModelsExpandDepth: -1,
+	defaultModelExpandDepth: 1,
+	defaultModelRendering: "model",
     presets: [
       SwaggerUIBundle.presets.apis,
       SwaggerUIStandalonePreset
